@@ -1,0 +1,7 @@
+class Solution:
+    def containsDuplicate(self, nums: List[int]) -> bool:
+         # Compare the length of array with the length of set of (array)
+		     # Converting into set will automatically remove all the duplicates.
+		     # That means if the length doesn't match each other, it implies there is duplicate.
+        
+        return len(nums) != len(set(nums))
